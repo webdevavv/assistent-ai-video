@@ -15,3 +15,36 @@
     mask-image: url(./alarm.svg);
     -webkit-mask-image: url(./alarm.svg);
 }
+.icon-smm{
+    mask-image: url(./ad_group.svg);
+    -webkit-mask-image: url(./ad_group.svg);
+}
+.icon-journalism{
+    mask-image: url(./journalism.svg);
+    -webkit-mask-image: url(./journalism.svg);
+}
+.icon-journalism{
+    mask-image: url(./journalism.svg);
+    -webkit-mask-image: url(./journalism.svg);
+}
+
+.icon-students{
+    mask-image: url(./students.svg);
+    -webkit-mask-image: url(./students.svg);
+}
+.icon-translators{
+    mask-image: url(./translators.svg);
+    -webkit-mask-image: url(./translators.svg);
+}
+.icon-artists{
+    mask-image: url(./artists.svg);
+    -webkit-mask-image: url(./artists.svg);
+}
+.icon-businessmen{
+    mask-image: url(./businessmen.svg);
+    -webkit-mask-image: url(./businessmen.svg);
+}
+.icon-star{
+    mask-image: url(./star.svg);
+    -webkit-mask-image: url(./star.svg);
+}
