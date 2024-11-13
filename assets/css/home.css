@@ -476,6 +476,10 @@
 
 
 }
+.assistant-swiper{
+    position: relative;
+    overflow: hidden;
+}
 
 
 /*=================================================From photo to video END===========================================*/
