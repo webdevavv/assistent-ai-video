@@ -2,6 +2,7 @@
 const swiper = new Swiper('.convert-swiper', {
     loop: true,
     slidesPerView: 1,
+    spaceBetween: 10,
 
     pagination: {
         el: '.swiper-pagination',
