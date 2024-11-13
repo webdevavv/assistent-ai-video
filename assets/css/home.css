@@ -543,11 +543,12 @@
     position: relative;
 }
 
-.assistant-fon{
+.assistant-fon {
     position: absolute;
     left: 0;
     bottom: 0;
 }
+
 .help-column {
     max-width: 384px;
     width: 100%;
@@ -1211,6 +1212,7 @@
         padding: 15px 15px;
         max-width: 139px;
     }
+
     .asks-list-icon {
         flex: 0 0 27px;
         height: 27px;
@@ -1224,6 +1226,7 @@
         height: 10px;
 
     }
+
     .asks-list-icon.active::after {
 
         width: 1px;
@@ -1356,6 +1359,10 @@
     .neural-bg {
         left: 0;
         opacity: 1;
+    }
+
+    .assistant-fon {
+        display: none;
     }
 
     .photos-tools-icon {
