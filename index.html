@@ -18,12 +18,12 @@
 
     <main class="main">
 
-        <section class="convert-section section big-container">
+        <section class="convert-section section ">
             <div class="container">
                 <div class="convert-body block-body G-align-center">
                     <div class="convert-description block-description  G-align-start">
                         <div class="convert-description-icon">
-                            <img src="assets/img/videosPlay.svg" alt="">
+                            <img src="assets/img/icons/videosPlay.svg" alt="">
                         </div>
                         <div class="convert-description-texts block-texts">
                             <h1 class="convert-title main-title">Превратите фото <br/>в видео c Assistant AI</h1>
@@ -40,46 +40,52 @@
                         <div class="convert-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide convert-slide">
-                                    <div style="background-image: url('assets/img/convertimage.jpg')"
+
+
+                                    <div  id="videoContainer" style="background-image: url('assets/img/convertimage.webp')"
                                          class="convert-slide-img G-flex G-image">
+                                        <video autoplay id="videoPlayer" class="videoPlayer">
+                                            <source src="./assets/video/Features.webm" type="video/webm">
+                                        </video>
                                         <div class="convert-slide-dropdown">
                                             <div class="slide-dropdown-img">
-                                                <img src="assets/img/convertSlide3.png" alt="">
+                                                <img src="assets/img/convertSlide3.webp" alt="">
                                             </div>
                                             <div class="slide-dropdown-img">
-                                                <img src="assets/img/convertSlide2.png" alt="">
+                                                <img src="assets/img/convertSlide2.webp" alt="">
                                             </div>
                                             <div class="slide-dropdown-img slide-dropdown-none">
-                                                <img src="assets/img/convertSlide1.png" alt="">
+                                                <img src="assets/img/convertSlide1.webp" alt="">
 
                                             </div>
                                         </div>
 
-                                        <div class="convert-play">
+                                        <div id="playButton" class="convert-play">
                                             <img src="assets/img/videoPlay.svg" alt="">
                                         </div>
                                         <button class="convert-media-btn btn-blue">Сгенерировать</button>
+
                                     </div>
                                 </div>
                                 <div class="swiper-slide convert-slide convert-slide-mobile">
-                                    <div style="background-image: url('assets/img/photoBanner2.png')"
+                                    <div style="background-image: url('assets/img/photoBanner2.webp')"
                                          class="photo-banner banner photo-banner-one G-image">
                                         <div class="banner-dropDown dropDown G-align-center">
                                             <div class="banner-dropDown-img dropDown-img ">
-                                                <img src="assets/img/banner-dropDown4.png" alt="">
+                                                <img src="assets/img/banner-dropDown4.webp" alt="">
                                             </div>
                                             <div class="banner-dropDown-img dropDown-img ">
-                                                <img src="assets/img/banner-dropDown2.png" alt="">
+                                                <img src="assets/img/banner-dropDown2.webp" alt="">
                                             </div>
                                             <div class="banner-dropDown-img dropDown-img ">
-                                                <img src="assets/img/banner-dropDown3.png" alt="">
+                                                <img src="assets/img/banner-dropDown3.webp" alt="">
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="swiper-slide convert-slide convert-slide-mobile">
-                                    <div style="background-image: url('assets/img/photoBanner3.png')"
+                                    <div style="background-image: url('assets/img/photoBanner3.webp')"
                                          class="photo-banner banner photo-banner-two G-image">
                                         <div class="photo-banner-text ">
                                             <p>Скопление молний, абстракция, 3D, синие и белые оттенки, 4К,
@@ -87,16 +93,16 @@
                                         </div>
 
                                         <div class="photo-banner-ranges G-flex-column">
-                                            <img src="assets/img/dropdown.png" alt="">
+                                            <img src="assets/img/dropdown.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide convert-slide convert-slide-mobile">
-                                    <div style="background-image: url('assets/img/photoBanner1.png')"
+                                    <div style="background-image: url('assets/img/photoBanner1.webp')"
                                          class="photo-banner banner photo-banner-tree G-image">
                                         <div class="photo-banner-prompt G-flex">
-                                            <img class="banner-prompt-img"  src="assets/img/Pormpt.png" alt="">
-                                            <img class="prompt-img-mobile" src="assets/img/pormptMobile.png" alt="">
+                                            <img class="banner-prompt-img"  src="assets/img/Pormpt.webp" alt="">
+                                            <img class="prompt-img-mobile" src="assets/img/pormptMobile.webp" alt="">
 
                                         </div>
                                         <div class="banner-prompt-catalog G-align-center">
@@ -118,46 +124,43 @@
                     </div>
                 </div>
             </div>
-            <div class="convert-bg">
-                <img src="assets/img/convertBg.png" alt="">
-            </div>
-        </section>
 
+        </section>
 
         <section class="photo-video-section section">
             <div class="container">
                 <div class="photo-video-body G-flex-column">
                     <div class="photo-banners banners-sliders G-justify-between">
 
-                        <div style="background-image: url('assets/img/photoBanner2.png')"
+                        <div style="background-image: url('assets/img/photoBanner2.webp')"
                              class="photo-banner banner photo-banner-one G-image">
                             <div class="banner-dropDown dropDown G-align-center">
                                 <div class="banner-dropDown-img dropDown-img ">
-                                    <img src="assets/img/banner-dropDown4.png" alt="">
+                                    <img src="assets/img/banner-dropDown4.webp" alt="">
                                 </div>
                                 <div class="banner-dropDown-img dropDown-img ">
-                                    <img src="assets/img/banner-dropDown2.png" alt="">
+                                    <img src="assets/img/banner-dropDown2.webp" alt="">
                                 </div>
                                 <div class="banner-dropDown-img dropDown-img ">
-                                    <img src="assets/img/banner-dropDown3.png" alt="">
+                                    <img src="assets/img/banner-dropDown3.webp" alt="">
                                 </div>
                             </div>
 
                         </div>
-                        <div style="background-image: url('assets/img/photoBanner3.png')"
+                        <div style="background-image: url('assets/img/photoBanner3.webp')"
                              class="photo-banner banner photo-banner-two G-image">
                             <div class="photo-banner-text ">
                                 <p>Скопление молний, абстракция, 3D, синие и белые оттенки, 4К, реализм..|</p>
                             </div>
                             <div class="photo-banner-ranges G-flex-column">
-                                <img src="assets/img/dropdown.png" alt="">
+                                <img src="assets/img/dropdown.webp" alt="">
                             </div>
 
                         </div>
-                        <div style="background-image: url('assets/img/photoBanner1.png')"
+                        <div style="background-image: url('assets/img/photoBanner1.webp')"
                              class="photo-banner banner photo-banner-tree G-image">
                             <div class="photo-banner-prompt G-flex">
-                                <img src="assets/img/Pormpt.png" alt="">
+                                <img src="assets/img/Pormpt.webp" alt="">
                             </div>
                             <div class="banner-prompt-catalog G-align-center">
                                 <span>Хип-Хоп</span>
@@ -171,7 +174,7 @@
                     </div>
                     <div class="video-media  G-flex-column G-center">
                         <h2 class="video-title block-title">Из фото в видео</h2>
-                        <div style="background-image: url('./assets/img/photoMain.png')"
+                        <div style="background-image: url('./assets/img/photoMain.webp')"
                              class="video-main-picture video-picture G-image">
                             <div class="video-top-text ">
                                 <p class="  sub-title"> Создавайте впечатляющие видеоролики на основе ваших фото за
@@ -182,15 +185,15 @@
                             <button class="bring-photos-btn bring-btn">Оживите ваши <span>фото</span></button>
                             <div class="photos-tools G-align-center">
                                 <div class="photos-tools-img G-flex">
-                                    <img src="assets/img/photosTools1.png" alt="">
+                                    <img src="assets/img/photosTools1.webp" alt="">
 
                                 </div>
                                 <div class="photos-tools-icon G-flex">
-                                    <img src="assets/img/toolsIcon.png" alt="">
+                                    <img src="assets/img/icons/toolsIcon.svg" alt="">
 
                                 </div>
                                 <div class="photos-tools-play G-flex">
-                                    <img src="assets/img/videoPlay.svg" alt="">
+                                    <img src="assets/img/icons/videosPlay.svg" alt="">
                                 </div>
 
                             </div>
@@ -213,9 +216,9 @@
                     </div>
                 </div>
             </div>
-            <div class="photo-bg">
-                <img src="assets/img/photoBg.png" alt="">
-            </div>
+<!--            <div class="photo-bg">-->
+<!--                <img src="assets/img/photoBg.webp" alt="">-->
+<!--            </div>-->
         </section>
 
 
@@ -232,7 +235,7 @@
                                     результат без задержек</p>
                             </div>
                             <div class="advantages-picture G-flex ">
-                                <img src="assets/img/advantages4.png" alt="">
+                                <img src="assets/img/advantages4.webp" alt="">
                                 <div class="advantages-icon advantages-icon-one G-center">
                                     <img src="assets/img/icons/alarm.svg" alt="">
                                 </div>
@@ -244,7 +247,7 @@
 
 
                             <div class="advantages-picture G-flex ">
-                                <img src="assets/img/advantages2.png" alt="">
+                                <img src="assets/img/advantages2.webp" alt="">
                                 <div class="advantages-icon advantages-icon-two G-center">
                                     <img src="assets/img/icons/file.svg" alt="">
                                 </div>
@@ -271,7 +274,7 @@
                                 </p>
                             </div>
                             <div class="advantages-picture G-flex ">
-                                <img src="assets/img/advantages3.png" alt="">
+                                <img src="assets/img/advantages3.webp" alt="">
                                 <div class="advantages-icon advantages-icon-one G-center">
                                     <img src="assets/img/icons/all.svg" alt="">
                                 </div>
@@ -306,7 +309,7 @@
                                         </p>
                                     </div>
                                     <div class="help-column-img help-img-one G-flex">
-                                        <img src="assets/img/assistant-help1.png" alt="">
+                                        <img src="assets/img/assistant-help1.webp" alt="">
                                     </div>
 
                                 </div>
@@ -315,7 +318,7 @@
                             <div class="swiper-slide">
                                 <div class="help-column">
                                     <div class="help-column-img help-img-two G-flex">
-                                        <img src="assets/img/assistant-help2.png" alt="">
+                                        <img src="assets/img/assistant-help2.webp" alt="">
                                     </div>
                                     <div class="help-column-texts  help-text-two">
                                         <h3 class="help-column-title">Face Swap видео</h3>
@@ -346,7 +349,7 @@
                                         </p>
                                     </div>
                                     <div class="help-column-img help-img-tree G-flex">
-                                        <img src="assets/img/assistant-help3.png" alt="">
+                                        <img src="assets/img/assistant-help3.webp" alt="">
                                     </div>
 
                                 </div>
@@ -364,16 +367,13 @@
 
                 </div>
             </div>
-            <div class="assistant-fon">
-                <img src="assets/img/assistentFon.jpg" alt="">
-            </div>
         </section>
 
         <section class="neural-network-section">
-            <div class="big-container">
+            <div class="container">
                 <div class="neural-network-body G-flex-column G-center">
                     <h2 class="network-title block-title">Нейросеть, которая подойдёт каждому</h2>
-                    <div style="background-image: url('./assets/img/networkMedia.png')" class="network-media G-image">
+                    <div style="background-image: url('./assets/img/networkMedia.webp')" class="network-media G-image">
 
                         <a href="" class="network-info bloggers G-justify-between">
                             <p class="bloggers-text network-text-bold">SMM и блогеры</p>
@@ -414,10 +414,6 @@
 
                     </div>
                 </div>
-
-            </div>
-            <div class="neural-bg">
-                <img src="assets/img/neuralBg.svg" alt="">
             </div>
         </section>
 
@@ -789,9 +785,7 @@
                 </div>
                 <button class="creation-btn btn-blue">Начать сейчас</button>
             </div>
-            <div class="content-creation-bg">
-                <img src="assets/img/content-creationBg.png" alt="">
-            </div>
+
 
         </section>
 
