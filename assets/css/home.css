@@ -465,12 +465,15 @@
 
 .photo-bg {
     position: absolute;
-    bottom: 0;
+    top: 400px;
     z-index: -1;
+    width: 100%;
+    height: 700px;
 }
 
 .photo-bg img {
-    opacity: .1;
+    width: 100%;
+
 
 }
 
