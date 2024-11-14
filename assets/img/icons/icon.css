@@ -48,3 +48,24 @@
     mask-image: url(./star.svg);
     -webkit-mask-image: url(./star.svg);
 }
+.icon-pause{
+    mask-image: url(./pause.svg);
+    -webkit-mask-image: url(./pause.svg);
+}
+.icon-play{
+    mask-image: url(./play.svg);
+    -webkit-mask-image: url(./play.svg);
+}
+
+.icon-face1{
+    mask-image: url(./iconFace1.svg);
+    -webkit-mask-image: url(./iconFace1.svg);
+}
+.icon-face2{
+    mask-image: url(./iconFace2.svg);
+    -webkit-mask-image: url(./iconFace2.svg);
+}
+.icon-face3{
+    mask-image: url(./iconFace3.svg);
+    -webkit-mask-image: url(./iconFace3.svg);
+}

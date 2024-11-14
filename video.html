@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Video From Photo</title>
+    <title>Video </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
@@ -32,12 +32,13 @@
                             <img src="assets/img/icons/videosPlay.svg" alt="">
                         </div>
                         <div class="convert-description-texts block-texts">
-                            <h1 class="convert-title main-title">Превратите фото <br/>в видео c Assistant AI</h1>
-                            <p class="convert-sub-title sub-title">Используйте нашу нейросеть для преобразования ваших
-                                фотографий в захватывающие видеоролики.
-                                Инструмент идеально подходит для создания впечатляющих визуального контента для
-                                социальных
-                                сетей</p>
+                            <h1 class="video-title main-title">Создавайте уникальные видео с Assistant AI</h1>
+                            <p class="video-sub-title sub-title">
+                                Нейросеть для генерации видеороликов.
+                                <br/>Добавляйте фото, видеофрагменты, текст и музыку за пару кликов! Простой инструмент
+                                для
+                                ярких задач
+                            </p>
                             <button class="convert-btn btn-blue">Начать сейчас</button>
                         </div>
                     </div>
@@ -45,38 +46,31 @@
                     <div class="convert-slider-box block-slider-box">
                         <div class="convert-swiper">
                             <div class="swiper-wrapper">
+
                                 <div class="swiper-slide convert-slide">
 
+                                    <div data-image="assets/img/convertimage2.webp"
+                                         style="background-image: url('assets/img/convertimage2.webp')"
+                                         class="video-slide-img G-flex G-image video-decor video-block">
 
-                                    <div  data-image="assets/img/convertimage.webp"
-                                          style="background-image: url('assets/img/convertimage.webp')"
-                                          class="convert-slide-img G-flex G-image  video-block">
-
-                                        <video style="display: none;"  class="videoPlayer convert-video">
+                                        <video  style="display: none" class="videoPlayer ">
                                             <source src="./assets/video/Features.webm" type="video/webm">
                                         </video>
-
-                                        <div class="convert-slide-dropdown">
-                                            <div class="slide-dropdown-img">
-                                                <img src="assets/img/convertSlide3.webp" alt="">
-                                            </div>
-                                            <div class="slide-dropdown-img">
-                                                <img src="assets/img/convertSlide2.webp" alt="">
-                                            </div>
-                                            <div class="slide-dropdown-img slide-dropdown-none">
-                                                <img src="assets/img/convertSlide1.webp" alt="">
-
-                                            </div>
+                                        <div class="video-slide-dropdown">
+                                            <p>Стеклянная абстрактная 3d фигура синих и белых оттенков..|</p>
                                         </div>
 
-                                        <div class="convert-play playButton">
+                                        <div class="video-play playButton">
                                             <img src="assets/img/videoPlay.svg" alt="">
                                         </div>
-                                        <button class="convert-media-btn btn-blue">Сгенерировать</button>
+                                        <button class="convert-video-btn btn-blue">Сгенерировать</button>
                                     </div>
 
 
+
                                 </div>
+
+
                                 <div class="swiper-slide convert-slide convert-slide-mobile">
                                     <div style="background-image: url('assets/img/photoBanner2.webp')"
                                          class="photo-banner banner photo-banner-one G-image">
@@ -105,30 +99,34 @@
                                         <div class="photo-banner-ranges G-flex-column">
                                             <div class="range">
                                                 <label class="G-flex">
-                                                    <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value2" />
+                                                    <input type="range" min="0" max="50" value="0" class="range-input"
+                                                           data-value=".value2"/>
                                                 </label>
                                                 <div class="value2 value">0</div>
                                             </div>
                                             <div class="range">
                                                 <label class="G-flex">
-                                                    <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value3" />
+                                                    <input type="range" min="0" max="50" value="0" class="range-input"
+                                                           data-value=".value3"/>
                                                 </label>
                                                 <div class="value3 value">0</div>
                                             </div>
                                             <div class="range">
                                                 <label class="G-flex">
-                                                    <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value4" />
+                                                    <input type="range" min="0" max="50" value="0" class="range-input"
+                                                           data-value=".value4"/>
                                                 </label>
                                                 <div class="value4 value">0</div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                                 <div class="swiper-slide convert-slide convert-slide-mobile">
                                     <div style="background-image: url('assets/img/photoBanner1.webp')"
                                          class="photo-banner banner photo-banner-tree G-image">
                                         <div class="photo-banner-prompt G-flex">
-                                            <img class="banner-prompt-img"  src="assets/img/Pormpt.webp" alt="">
+                                            <img class="banner-prompt-img" src="assets/img/Pormpt.webp" alt="">
                                             <img class="prompt-img-mobile" src="assets/img/pormptMobile.webp" alt="">
 
                                         </div>
@@ -151,7 +149,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section class="photo-video-section section">
@@ -182,19 +179,22 @@
                             <div class="photo-banner-ranges G-flex-column">
                                 <div class="range">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value2" />
+                                        <input type="range" min="0" max="50" value="0" class="range-input"
+                                               data-value=".value2"/>
                                     </label>
                                     <div class="value2 value">0</div>
                                 </div>
                                 <div class="range">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value3" />
+                                        <input type="range" min="0" max="50" value="0" class="range-input"
+                                               data-value=".value3"/>
                                     </label>
                                     <div class="value3 value">0</div>
                                 </div>
                                 <div class="range">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value4" />
+                                        <input type="range" min="0" max="50" value="0" class="range-input"
+                                               data-value=".value4"/>
                                     </label>
                                     <div class="value4 value">0</div>
                                 </div>
@@ -216,43 +216,48 @@
                         </div>
 
                     </div>
-                    <div class="video-media  G-flex-column G-center">
-                        <h2 class="video-title block-title">Из фото в видео</h2>
-                        <div style="background-image: url('./assets/img/photoMain.webp')"
-                             class="video-main-picture video-picture G-image">
-                            <div class="video-top-text  ">
-                                <p class="sub-title"> Создавайте впечатляющие видеоролики на основе ваших фото за
-                                    считанные минуты! Просто
-                                    загрузите изображения, введите ключевые слова, и наша нейросеть мгновенно создаст
-                                    видео!</p>
+
+
+                    <div class="ideas-video-media  G-flex-column G-center">
+                        <h2 class="video-title block-title">От идеи - до видео</h2>
+                        <div style="background-image: url('./assets/img/photoMain2.webp')"
+                             class="ideas-main-picture video-picture G-image">
+                            <div class="video-text ">
+                                <p class="video-sub-title">
+                                    Создавайте профессиональные видео без усилий! Введите ключевые слова, и Assistant AI
+                                    мгновенно соберет готовый видеоролик с плавным монтажом и эффектами
+                                </p>
                             </div>
-                            <button class="bring-photos-btn bring-btn">Оживите ваши <span>фото</span></button>
-                            <div class="photos-tools G-align-center">
-                                <div class="photos-tools-img G-flex">
-                                    <img src="assets/img/photosTools1.webp" alt="">
-
-                                </div>
-                                <div class="photos-tools-icon G-flex">
-                                    <img src="assets/img/icons/toolsIcon.svg" alt="">
-
-                                </div>
-                                <div class="photos-tools-play G-flex">
-                                    <img src="assets/img/icons/videosPlay.svg" alt="">
-                                </div>
-
-                            </div>
-                            <div class="video-bottom-text">
+                            <button class="video-btn bring-btn">Ваш личный <span>режиссер</span> и
+                                <span>монтажер</span></button>
+                            <div class="video-info ">
                                 <p>
-                                    Попробуйте сейчас и убедитесь, насколько просто создать видеоролики
-                                    профессионального уровня!
+                                    Забудьте о долгих часах редактирования. Создавайте видео без усилий!
                                 </p>
 
                             </div>
+
+                            <div class="music-play-tools G-align-center">
+                                <div class="G-flex">
+                                    <i class="icon icon-play"></i>
+                                </div>
+                                <div class="range ">
+                                    <label class="G-flex">
+                                        <input type="range" min="0" max="50" value="0" id="range1" data-value=".value1"
+                                               class="range-input"/>
+                                    </label>
+                                    <div class="value1 value">0</div>
+                                </div>
+                                <div class="G-flex">
+                                    <i class="icon icon-pause"></i>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="video-tools G-align-center">
                             <label class="video-label btn-blue">
                                 <input type="file">
-                                Загрузить фото
+                                Попробовать сейчас
                             </label>
                             <button class='video-tools-btn btn-white'>Другие возможности</button>
 
@@ -342,14 +347,13 @@
                                         <h3 class="help-column-title">Создать видео из фото</h3>
                                         <p class="help-column-sub-title">Легко, быстро, впечатляюще</p>
                                         <p class="help-column-text">
-                                            Создавайте динамичные видеоролики за считанные минуты! Нейросеть плавно
-                                            объединит кадры, добавит переходы и сделает видео живым и ярким. Идеально
-                                            подходит для создания захватывающего визуального контента для социальных
-                                            сетей и личных видеооткрыток
+                                            Превратите статичные фотографии в динамичные видеоролики всего за несколько
+                                            минут. Нейросеть сделает плавные переходы и анимацию, оживив ваши снимки.
+                                            Идеально для создания слайд-шоу или ярких видео-открыток
                                         </p>
                                     </div>
                                     <div class="help-column-img help-img-one G-flex">
-                                        <img src="assets/img/assistant-help1.webp" alt="">
+                                        <img src="assets/img/assistant-help6.webp" alt="">
                                     </div>
 
                                 </div>
@@ -557,6 +561,7 @@
                 </div>
             </div>
         </section>
+
 
         <section class="reviews-section">
             <div class="container">
@@ -813,6 +818,7 @@
             </div>
         </section>
 
+
         <section class="content-creation-section  G-center">
             <div class="content-creation-body G-align-center">
                 <div class="creation-info G-align-center">
@@ -827,6 +833,7 @@
 
         </section>
 
+
     </main>
 
     <footer>
@@ -834,6 +841,8 @@
     </footer>
 
 </div>
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/swiper.js"></script>

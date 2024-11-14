@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Video From Photo</title>
+    <title>Face swap video</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
@@ -22,6 +22,7 @@
         <a href="faceSwapVideo.html">Face Swap Video</a>
 
     </header>
+
     <main class="main">
 
         <section class="convert-section section ">
@@ -48,32 +49,35 @@
                                 <div class="swiper-slide convert-slide">
 
 
-                                    <div  data-image="assets/img/convertimage.webp"
-                                          style="background-image: url('assets/img/convertimage.webp')"
-                                          class="convert-slide-img G-flex G-image  video-block">
-
-                                        <video style="display: none;"  class="videoPlayer convert-video">
+                                    <div data-image="assets/img/convertimage5.webp"
+                                         style="background-image: url('assets/img/convertimage5.webp')"
+                                         class="face-swap-img G-flex G-image video-block">
+                                        <video style="display:none;"  class="videoPlayer face-vide-player">
                                             <source src="./assets/video/Features.webm" type="video/webm">
                                         </video>
-
-                                        <div class="convert-slide-dropdown">
-                                            <div class="slide-dropdown-img">
+                                        <div class="face-swap-dropdown G-justify-between">
+                                            <div class="face-swap-dropdown-img">
                                                 <img src="assets/img/convertSlide3.webp" alt="">
                                             </div>
-                                            <div class="slide-dropdown-img">
-                                                <img src="assets/img/convertSlide2.webp" alt="">
+                                            <div class="arrow-dropdown-img">
+                                                <img src="assets/img/convertSlide2.png" alt="">
                                             </div>
-                                            <div class="slide-dropdown-img slide-dropdown-none">
+                                            <div class="face-swap-dropdown-img slide-dropdown-scale">
                                                 <img src="assets/img/convertSlide1.webp" alt="">
 
                                             </div>
                                         </div>
 
-                                        <div class="convert-play playButton">
+
+
+
+                                        <div class="playButton face-swap-play">
                                             <img src="assets/img/videoPlay.svg" alt="">
                                         </div>
-                                        <button class="convert-media-btn btn-blue">Сгенерировать</button>
+                                        <button class="face-swap-btn btn-blue">Сгенерировать</button>
+
                                     </div>
+
 
 
                                 </div>
@@ -105,19 +109,22 @@
                                         <div class="photo-banner-ranges G-flex-column">
                                             <div class="range">
                                                 <label class="G-flex">
-                                                    <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value2" />
+                                                    <input type="range" min="0" max="50" value="0" class="range-input"
+                                                           data-value=".value2"/>
                                                 </label>
                                                 <div class="value2 value">0</div>
                                             </div>
                                             <div class="range">
                                                 <label class="G-flex">
-                                                    <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value3" />
+                                                    <input type="range" min="0" max="50" value="0" class="range-input"
+                                                           data-value=".value3"/>
                                                 </label>
                                                 <div class="value3 value">0</div>
                                             </div>
                                             <div class="range">
                                                 <label class="G-flex">
-                                                    <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value4" />
+                                                    <input type="range" min="0" max="50" value="0" class="range-input"
+                                                           data-value=".value4"/>
                                                 </label>
                                                 <div class="value4 value">0</div>
                                             </div>
@@ -128,7 +135,7 @@
                                     <div style="background-image: url('assets/img/photoBanner1.webp')"
                                          class="photo-banner banner photo-banner-tree G-image">
                                         <div class="photo-banner-prompt G-flex">
-                                            <img class="banner-prompt-img"  src="assets/img/Pormpt.webp" alt="">
+                                            <img class="banner-prompt-img" src="assets/img/Pormpt.webp" alt="">
                                             <img class="prompt-img-mobile" src="assets/img/pormptMobile.webp" alt="">
 
                                         </div>
@@ -182,19 +189,22 @@
                             <div class="photo-banner-ranges G-flex-column">
                                 <div class="range">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value2" />
+                                        <input type="range" min="0" max="50" value="0" class="range-input"
+                                               data-value=".value2"/>
                                     </label>
                                     <div class="value2 value">0</div>
                                 </div>
                                 <div class="range">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value3" />
+                                        <input type="range" min="0" max="50" value="0" class="range-input"
+                                               data-value=".value3"/>
                                     </label>
                                     <div class="value3 value">0</div>
                                 </div>
                                 <div class="range">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" class="range-input" data-value=".value4" />
+                                        <input type="range" min="0" max="50" value="0" class="range-input"
+                                               data-value=".value4"/>
                                     </label>
                                     <div class="value4 value">0</div>
                                 </div>
@@ -217,47 +227,51 @@
 
                     </div>
                     <div class="video-media  G-flex-column G-center">
-                        <h2 class="video-title block-title">Из фото в видео</h2>
-                        <div style="background-image: url('./assets/img/photoMain.webp')"
-                             class="video-main-picture video-picture G-image">
-                            <div class="video-top-text  ">
-                                <p class="sub-title"> Создавайте впечатляющие видеоролики на основе ваших фото за
-                                    считанные минуты! Просто
-                                    загрузите изображения, введите ключевые слова, и наша нейросеть мгновенно создаст
-                                    видео!</p>
+                        <h2 class="video-title block-title">Видео с заменой лица</h2>
+
+                        <div class="face-swap-picture video-picture G-image">
+                            <div class="face-top-text  ">
+                                <p class="  sub-title">
+                                    Создавайте уникальные видеоролики с заменой лиц всего за несколько минут! Просто
+                                    загрузите видео, выберите новое лицо или фото, и Assistant AI автоматически
+                                    подставит его, сохраняя реалистичность и синхронизацию движений. Наш инструмент
+                                    идеально подходит
+                                    для создания контента, который удивит ваших подписчиков.
+                                </p>
                             </div>
-                            <button class="bring-photos-btn bring-btn">Оживите ваши <span>фото</span></button>
-                            <div class="photos-tools G-align-center">
-                                <div class="photos-tools-img G-flex">
-                                    <img src="assets/img/photosTools1.webp" alt="">
+                            <button class="face-btn bring-btn">Замените <span>лицо</span> в два клика</button>
 
-                                </div>
-                                <div class="photos-tools-icon G-flex">
-                                    <img src="assets/img/icons/toolsIcon.svg" alt="">
+                            <div class="face-tools G-align-center">
+                                <i class="icon icon-face1  icon-face"></i>
+                                <i class="icon icon-face3 icon-face"></i>
 
-                                </div>
-                                <div class="photos-tools-play G-flex">
-                                    <img src="assets/img/icons/videosPlay.svg" alt="">
-                                </div>
+                                <i class="icon icon-face3 icon-face"></i>
 
                             </div>
-                            <div class="video-bottom-text">
+
+                            <div class="face-bottom-text">
                                 <p>
-                                    Попробуйте сейчас и убедитесь, насколько просто создать видеоролики
-                                    профессионального уровня!
+                                    Убедитесь, как просто создать профессиональное видео с заменой лиц, используя мощь
+                                    нейросетей!
                                 </p>
 
                             </div>
                         </div>
+
+
+
+
+
                         <div class="video-tools G-align-center">
                             <label class="video-label btn-blue">
                                 <input type="file">
-                                Загрузить фото
+                                Выбрать фото
                             </label>
                             <button class='video-tools-btn btn-white'>Другие возможности</button>
 
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -329,6 +343,7 @@
             </div>
         </section>
 
+
         <section class="assistant-help-section">
             <div class="container">
                 <div class="assistant-help-body">
@@ -339,7 +354,7 @@
                             <div class="swiper-slide">
                                 <div class="help-column ">
                                     <div class="help-column-texts ">
-                                        <h3 class="help-column-title">Создать видео из фото</h3>
+                                        <h3 class="help-column-title">Создать видео</h3>
                                         <p class="help-column-sub-title">Легко, быстро, впечатляюще</p>
                                         <p class="help-column-text">
                                             Создавайте динамичные видеоролики за считанные минуты! Нейросеть плавно
@@ -358,17 +373,16 @@
                             <div class="swiper-slide">
                                 <div class="help-column">
                                     <div class="help-column-img help-img-two G-flex">
-                                        <img src="assets/img/assistant-help2.webp" alt="">
+                                        <img src="assets/img/assistant-help7.webp" alt="">
                                     </div>
                                     <div class="help-column-texts  help-text-two">
-                                        <h3 class="help-column-title">Face Swap видео</h3>
-                                        <p class="help-column-sub-title">Необычно, весело, креативно</p>
+                                        <h3 class="help-column-title">Создать видео с музыкой</h3>
+                                        <p class="help-column-sub-title">Эмоционально, стильно, эффектно</p>
                                         <p class="help-column-text">
-                                            <span> Хотите увидеть себя в новом образе? </span>Face Swap мгновенно
-                                            заменит лица в
-                                            видео,
-                                            создавая забавные и оригинальные ролики. Подходит для развлечения и создания
-                                            запоминающегося контента
+                                            Соедините визуальные образы с мелодией для передачи атмосферы. Нейросеть
+                                            подберет ритм, добавит плавные переходы и создаст динамичное видео.
+                                            Используйте для создания коротких клипов или праздничных открыток
+
                                         </p>
                                     </div>
 
@@ -378,7 +392,7 @@
                             <div class="swiper-slide">
                                 <div class="help-column  help-flex-column">
                                     <div class="help-column-texts ">
-                                        <h3 class="help-column-title">Создать видео с музыкой</h3>
+                                        <h3 class="help-column-title">Создать видео из фото</h3>
                                         <p class="help-column-sub-title">Эмоционально, стильно, эффектно</p>
                                         <p class="help-column-text">
                                             Соедините визуальные образы с мелодией для передачи атмосферы. Нейросеть
@@ -389,7 +403,7 @@
                                         </p>
                                     </div>
                                     <div class="help-column-img help-img-tree G-flex">
-                                        <img src="assets/img/assistant-help3.webp" alt="">
+                                        <img src="assets/img/assistant-help4.webp" alt="">
                                     </div>
 
                                 </div>
@@ -557,6 +571,7 @@
                 </div>
             </div>
         </section>
+
 
         <section class="reviews-section">
             <div class="container">
@@ -813,6 +828,7 @@
             </div>
         </section>
 
+
         <section class="content-creation-section  G-center">
             <div class="content-creation-body G-align-center">
                 <div class="creation-info G-align-center">
@@ -826,6 +842,7 @@
 
 
         </section>
+
 
     </main>
 

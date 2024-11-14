@@ -1,0 +1,277 @@
+
+.together-all-img {
+    border-radius: 20px;
+    width: 497px;
+    height: 279px;
+    margin: 0 auto;
+    position: relative;
+    transform: scaleX(-1);
+
+}
+
+
+.together-video-player {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+
+}
+
+.together-all-dropdown {
+    max-width: 370px;
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 15px;
+    right: -70px;
+    transform: scaleX(-1);
+    background: #FFFFFFB2;
+    border: 2px solid #FFFFFF80;
+    backdrop-filter: blur(20px);
+    padding: 12px 15px;
+    border-radius: 10px;
+}
+
+.together-all-dropdown p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.9px;
+    color: #000000;
+
+}
+
+.together-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    cursor: pointer;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+
+}
+
+.video-media {
+    margin-top: 150px;
+}
+
+.together-picture {
+    width: 788px;
+    height: 439px;
+    position: relative;
+    border-radius: 30px;
+    margin-top: 50px;
+    box-shadow: 0px 5px 25px 0px #00000033;
+
+}
+
+.together-video-text {
+    padding: 15px 20px;
+    background: #FFFFFFB2;
+    border: 2px solid #FFFFFF80;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 20px 0px #FFFFFF4D;
+    border-radius: 15px;
+    max-width: 476px;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    left: -180px;
+}
+
+.together-video-sub {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    opacity: .7;
+
+}
+
+.together-btn {
+    padding: 15px 18px;
+    background: #FFFFFFB2;
+    border: 2px solid #FFFFFF80;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 20px 0px #FFFFFF4D;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.together-info {
+    bottom: 25px;
+    max-width: 589px;
+    position: absolute;
+    right: -200px;
+    padding: 15px 20px;
+    background: #FFFFFFB2;
+    border: 2px solid #FFFFFF80;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 20px 0px #FFFFFF4D;
+    border-radius: 15px;
+
+}
+
+.together-info p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+}
+
+.together-play-tools {
+    max-width: 241px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    gap: 20px;
+
+
+}
+
+.together-play-mobile {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+    .together-all-img {
+        width: 100%;
+        height: 400px;
+        border-radius: 15px;
+
+    }
+
+    .together-all-img img {
+        border-radius: 15px;
+    }
+
+    .together-all-dropdown {
+        right: 10px;
+        left: unset;
+        top: 10px;
+        padding: 10px;
+    }
+
+    .video-media {
+        margin-top: 50px;
+    }
+
+    .together-picture {
+        width: 620px;
+    }
+
+    .together-play-tools {
+        left: -20px;
+    }
+    .together-title {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .together-video-text {
+        left: unset;
+        right: -40px;
+        top: -39px;
+        max-width: 276px;
+    }
+
+    .together-video-sub {
+        font-size: 10px;
+        line-height: 14px;
+
+    }
+
+    .together-btn {
+        padding: 10px 15px;
+        left: -30px;
+        right: unset;
+        top: 169px;
+    }
+
+    .together-play-tools {
+        left: -30px;
+        bottom: 120px;
+    }
+
+    .together-info {
+        padding: 10px 15px;
+        left: -40px;
+        right: unset;
+        bottom: -30px;
+    }
+
+    .together-info p {
+        font-size: 10px;
+        line-height: 14px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .together-all-dropdown p {
+        font-size: 8px;
+        line-height: 11px;
+
+    }
+
+    .together-all-dropdown {
+        min-height: max-content;
+        justify-content: flex-end;
+        max-width: 202px;
+        gap: 8px;
+
+    }
+
+    .together-play {
+        width: 36px;
+        height: 36px;
+    }
+
+    .together-picture {
+        width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .together-title {
+        text-align: center;
+        max-width: 259px;
+    }
+
+    .together-picture {
+        width: 280px;
+    }
+
+    .together-play-tools {
+        right: -30px;
+        left: unset;
+        padding: 0;
+        bottom: 160px;
+        max-width: 108px;
+    }
+
+    .together-play-img {
+        display: none;
+    }
+
+    .together-play-mobile {
+        display: block;
+    }
+
+    .together-all-img {
+        height: 170px;
+        transform: scaleX(-1);
+    }
+}
