@@ -39,6 +39,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+window.addEventListener('scroll', function() {
+    const headerTop = document.querySelector('.header')
+
+
+    if (window.scrollY > 0) {
+        headerTop.classList.add('moved');
+
+    } else {
+        headerTop.classList.remove('moved');
+
+    }
+});
 
 
 

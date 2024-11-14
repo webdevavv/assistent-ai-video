@@ -8,8 +8,17 @@
     z-index: 10;
     display: flex;
     align-items: center;
+    transition: .3s;
 }
+.header.moved{
+    padding: 5px 0;
 
+}
+.header.moved .header-body{
+    padding: 7px 24px;
+
+
+}
 .header.active .header-body {
     backdrop-filter: unset;
 
