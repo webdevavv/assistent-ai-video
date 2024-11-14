@@ -14,14 +14,58 @@
 
 <div class="wrapper">
 
-    <header style="padding: 20px;z-index: 10 ;position: relative ; display: flex; gap: 20px"  >
-        <a href="video.html">Video</a>
-        <a href="index.html">Video From Photo</a>
-        <a href="videoWithMusic.html">Video With Music</a>
-        <a href="videoFromPhotosMusic.html">Video From Photo With Music</a>
-        <a href="faceSwapVideo.html">Face Swap Video</a>
+    <header class="header">
+        <div class="container">
+            <div class="header-body G-justify-between">
 
+                <a class="header-logo" href="">
+                    <img src="assets/img/logo-type-1.svg" alt="">
+                </a>
+                <div class="menu-bg"></div>
+
+                <nav class="menu">
+
+                    <div class="menu-content-mobile">
+                        <a class="header-logo" href="">
+                            <img src="assets/img/logo-type-1.svg" alt="">
+                        </a>
+                        <p class="menu-clue">Быстрая генерация видео</p>
+                    </div>
+
+                    <ul class="menu-list G-flex">
+                        <li>
+                            <a href="#possibilities">Возможности</a>
+                        </li>
+                        <li>
+                            <a href="#forWhom">Для кого</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-mobile-actions ">
+                        <button class="btn-login">Вход</button>
+                        <button class="btn-register  btn-register-mobile">Регистрация</button>
+                    </div>
+
+                </nav>
+                <div class="burger">
+                    <span></span>
+                </div>
+
+                <div class="header-actions G-align-center">
+                    <button class="btn-login">Вход</button>
+                    <button class="btn-register ">Регистрация</button>
+                </div>
+
+            </div>
+        </div>
     </header>
+
     <main class="main">
 
         <section class="convert-section section ">
@@ -823,7 +867,7 @@
             <div class="content-creation-body G-align-center">
                 <div class="creation-info G-align-center">
                     <p>Доверьте создание контента</p>
-                    <a href="index.html">
+                    <a href="videoPhoto.html">
                         <img src="assets/img/logo.svg" alt="">
                     </a>
                 </div>
@@ -836,9 +880,40 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body G-justify-between">
+                <a class="footer-logo" href="videoPhoto.html">
+                    <img src="assets/img/footerLogo.svg" alt="">
+                </a>
+                <nav class="footer-menu">
+                    <ul class="footer-menu-list G-flex">
+                        <li>
+                            <a href="#possibilities">Возможности</a>
+                        </li>
+                        <li>
+                            <a href="#forWhom">Для кого</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
 
+                <button class="btn-register footer-btn">Регистрация</button>
+
+            </div>
+            <div class="footer-clue ">
+                <span> ©2024 Assistant AI.</span>
+                <span>Все права защищены</span>
+            </div>
+            <h2 class="footer-big-text">Assistant AI</h2>
+        </div>
     </footer>
+
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

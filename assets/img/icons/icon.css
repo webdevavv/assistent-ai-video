@@ -69,3 +69,7 @@
     mask-image: url(./iconFace3.svg);
     -webkit-mask-image: url(./iconFace3.svg);
 }
+.icon-arrow{
+    mask-image: url(./arrow.svg);
+    -webkit-mask-image: url(./arrow.svg);
+}

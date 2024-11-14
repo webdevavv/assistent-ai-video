@@ -1,3 +1,47 @@
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.menu');
+const header = document.querySelector('.header');
+const menuBg = document.querySelector('.menu-bg');
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    burger.addEventListener("click", function (e) {
+        if (menu.classList.contains('active')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+    menuBg.addEventListener("click", function (e) {
+        if (menu.classList.contains('active')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    function openMenu() {
+        menu.classList.add('active');
+        burger.classList.add('active');
+        header.classList.add('active');
+        menuBg.classList.add('active');
+
+    }
+
+    function closeMenu() {
+        menu.classList.remove('active');
+        burger.classList.remove('active');
+        header.classList.remove('active');
+        menuBg.classList.remove('active');
+
+    }
+
+
+});
+
+
+
+
 function toggleActiveState(item) {
     const icon = item.querySelector('.asks-list-icon');
     const sub = item.querySelector('.asks-list-sub');

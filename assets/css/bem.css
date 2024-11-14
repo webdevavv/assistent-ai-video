@@ -7,6 +7,9 @@
 .wrapper{
     overflow: hidden;
 }
+.main{
+    margin-top: 180px;
+}
 .block-title {
     font-size: 32px;
     font-weight: 700;
@@ -255,6 +258,22 @@
 .convert-description-icon{
     flex: 0 0 46px;
 }
+
+.btn-register {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #0057FF;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.btn-register:hover {
+    opacity: .6;
+}
 /*=================================================MEDIA START===========================================*/
 
 
@@ -342,6 +361,9 @@
         width: 50px;
         height: 50px;
     }
+    .btn-register {
+        font-size: 14px;
+    }
 
     .dropDown {
         height: 70px;
@@ -365,6 +387,9 @@
         line-height: 21.48px;
 
 
+    }
+    .main {
+        margin-top: 130px;
     }
 
 }
