@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('SFProText-Medium.woff');
+    src: local('SFProText-Medium.woff'), local('SF Pro Text'),
+    url('SFProText-Medium.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('SFProText-Bold.woff');
+    src: local('SFProText-Bold.woff'), local('SF Pro Text'),
+    url('SFProText-Bold.woff') format('woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('SFProText-Semibold.woff');
+    src: local('SFProText-Semibold.woff'), local('SF Pro Text'),
+    url('SFProText-Semibold.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url('Montserrat-SemiBold.woff');
+    src: local('Montserrat-SemiBold.woff'), local('Montserrat'),
+    url('Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('SFProText-Regular.woff');
+    src: local('SFProText-Regular.woff'), local('SF Pro Text'),
+    url('SFProText-Regular.woff') format('woff');
+    font-weight: 400;
+}

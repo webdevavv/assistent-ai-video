@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.icon-alarm{
+    mask-image: url(./alarm.svg);
+    -webkit-mask-image: url(./alarm.svg);
+}
+.icon-smm{
+    mask-image: url(./ad_group.svg);
+    -webkit-mask-image: url(./ad_group.svg);
+}
+.icon-journalism{
+    mask-image: url(./journalism.svg);
+    -webkit-mask-image: url(./journalism.svg);
+}
+.icon-journalism{
+    mask-image: url(./journalism.svg);
+    -webkit-mask-image: url(./journalism.svg);
+}
+
+.icon-students{
+    mask-image: url(./students.svg);
+    -webkit-mask-image: url(./students.svg);
+}
+.icon-translators{
+    mask-image: url(./translators.svg);
+    -webkit-mask-image: url(./translators.svg);
+}
+.icon-artists{
+    mask-image: url(./artists.svg);
+    -webkit-mask-image: url(./artists.svg);
+}
+.icon-businessmen{
+    mask-image: url(./businessmen.svg);
+    -webkit-mask-image: url(./businessmen.svg);
+}
+.icon-star{
+    mask-image: url(./star.svg);
+    -webkit-mask-image: url(./star.svg);
+}
+.icon-pause{
+    mask-image: url(./pause.svg);
+    -webkit-mask-image: url(./pause.svg);
+}
+.icon-play{
+    mask-image: url(./play.svg);
+    -webkit-mask-image: url(./play.svg);
+}
+
+.icon-face1{
+    mask-image: url(./iconFace1.svg);
+    -webkit-mask-image: url(./iconFace1.svg);
+}
+.icon-face2{
+    mask-image: url(./iconFace2.svg);
+    -webkit-mask-image: url(./iconFace2.svg);
+}
+.icon-face3{
+    mask-image: url(./iconFace3.svg);
+    -webkit-mask-image: url(./iconFace3.svg);
+}
+.icon-arrow{
+    mask-image: url(./arrow.svg);
+    -webkit-mask-image: url(./arrow.svg);
+}
