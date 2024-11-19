@@ -31,15 +31,27 @@
 }
 
 .btn-blue {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.71px;
-    color: #FFFFFF;
     background: #0057FF;
     border-radius: 50px;
     cursor: pointer;
     transition: .3s;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.71px;
+    color: #FFFFFF;
+}
+.btn-blue img{
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
 
+}
+.btn-blue span{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.71px;
+    color: #FFFFFF;
 }
 .swiper-pagination{
     z-index: 1 !important;
@@ -290,7 +302,9 @@
         max-width: 100%;
 
     }
-
+    .banner {
+        border-radius: 15px;
+    }
     .main-title {
         font-size: 20px;
         line-height: 23.87px;
@@ -319,6 +333,7 @@
 
     .bring-btn {
         font-size: 10px;
+        border-radius: 10px;
 
     }
     .bring-btn span {
@@ -339,11 +354,18 @@
 .together-dropdown-img{
     flex: 0 0 25px;
 }
-    .btn-blue {
+    .btn-blue span {
         font-size: 10px;
         line-height: 14px;
 
 
+    }
+    .video-label {
+        padding: 10px 30px;
+    }
+    .btn-blue{
+        font-size: 10px;
+        line-height: 14px;
     }
     .range-input::-webkit-slider-thumb {
         height: 5px;
@@ -364,13 +386,21 @@
     .dropDown-img img {
         width: 50px;
         height: 50px;
+        border-radius: 7px;
     }
     .btn-register {
         font-size: 14px;
     }
+    .btn-blue img{
+        width: 20px;
+        right: -5px;
+        bottom: -5px;
+        height: 20px;
 
+    }
     .dropDown {
         height: 70px;
+        border-radius: 10px;
     }
     .network-text-bold{
         font-size: 15px;
@@ -392,10 +422,11 @@
 
 
     }
+
     .main {
         margin-top: 130px;
     }
-
 }
+
 
 /*=================================================MEDIA END===========================================*/

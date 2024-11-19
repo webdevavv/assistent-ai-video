@@ -260,7 +260,10 @@
     cursor: pointer;
 
 }
+.swiper-pagination-bullet-active{
+    box-shadow: 0px 2px 10px 0px #0057FF66 !important;
 
+}
 .photos-tools-img img {
     border-radius: 10px;
 
@@ -720,7 +723,7 @@
     font-size: 35px;
     background: #0057FF;
     transition: .3s;
-    opacity: .6;
+    opacity: 1;
 
 }
 
@@ -966,6 +969,7 @@
     max-width: 384px;
     min-height: 207px;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
 .reviews-autho {
@@ -1098,9 +1102,13 @@
     .photo-banner-ranges {
         right: 10px;
         bottom: 10px;
+
     }
     .slide-dropdown-img {
         border-radius: 25px;
+    }
+    .video-media {
+        margin-top: 130px;
     }
 
     .photo-video-section::after {
@@ -1145,8 +1153,8 @@
         right: 0;
     }
 
-    .video-media {
-        margin-top: 50px;
+    .slide-dropdown-img img{
+        border-radius: 7px;
     }
 
     .convert-slide-img {
@@ -1177,6 +1185,7 @@
     .banner-prompt-catalog {
         right: 10px;
         bottom: 8px;
+        border-radius: 10px;
     }
 
     .photo-banner-ranges {
@@ -1242,8 +1251,9 @@
     .bring-photos-btn {
         top: 150px;
         left: -40px;
-        padding: 15px 15px;
+        padding: 10px 15px;
         right: unset;
+        border-radius: 10px;
     }
 
     .asks-list-icon {
@@ -1259,7 +1269,9 @@
         height: 10px;
 
     }
-
+    .videoPlayer{
+        border-radius: 15px;
+    }
     .asks-list-icon.active::after {
 
         width: 1px;
@@ -1271,13 +1283,22 @@
 
 
     }
+    .help-column-img img {
+        border-radius: 20px;
 
+
+    }
+    .help-column-img{
+        border-radius: 20px;
+
+    }
     .network-text {
         display: none;
     }
 
     .network-media {
         width: 500px;
+        border-radius: 15px;
     }
 
     .video-top-text {
@@ -1298,6 +1319,11 @@
         bottom: 150px;
         left: unset;
         gap: 12px;
+        border-radius: 10px;
+
+    }
+    .photos-tools-img img{
+        border-radius: 7px;
 
     }
 
@@ -1313,6 +1339,7 @@
         padding: 10px 15px;
         left: -20px;
         bottom: -10px;
+        border-radius: 10px;
     }
 
     .video-bottom-text p {
@@ -1329,8 +1356,18 @@
 
 @media (max-width: 768px) {
 
+    .advantages-picture img {
+        border-radius: 15px;
+    }
+    .advantages-text{
+        border-radius: 15px;
+    }
+    .advantages-icon{
+        border-radius: 10px;
+    }
     .video-main-picture {
         width: 400px;
+        border-radius: 15px;
     }
 
     .photo-video-section::after {
@@ -1341,6 +1378,10 @@
         flex-direction: column;
         gap: 8px;
         padding: 10px 38px;
+        border-radius: 15px;
+    }
+    .creation-info img{
+         max-width: 87px;
     }
 
     .creation-info p {
@@ -1378,13 +1419,15 @@
 
 @media (max-width: 576px) {
     .convert-slide-img {
-        height: 170px;
+        height: 270px;
+        border-radius: 15px;
     }
 
     .photo-banner-ranges {
         padding: 10px;
         max-width: 104px;
         gap: 13px;
+        border-radius: 10px;
     }
 
     .reviews-section {
@@ -1518,6 +1561,11 @@
 
     .network-info {
         padding: 8px;
+        border-radius: 10px;
+    }
+    .network-descr{
+        padding: 15px 20px;
+        backdrop-filter: blur(10px);
     }
 
     .help-column-text span {
@@ -1628,7 +1676,7 @@
     }
 
     .photo-banner {
-        height: 170px;
+        height: 270px;
     }
 
     .advantages-picture {
@@ -1642,6 +1690,7 @@
         top: 10px;
         max-width: 220px;
         padding: 10px 12px;
+        border-radius: 10px;
 
 
     }
@@ -1668,7 +1717,7 @@
     }
 
     .convert-swiper-pagination {
-        bottom: -20px !important;
+        bottom: -120px !important;
 
     }
 
@@ -1723,6 +1772,7 @@
 
     .reviews-item {
         min-height: 158px;
+        border-radius: 15px;
     }
 
     .author-profession-box span {
@@ -1770,6 +1820,7 @@
     .video-top-text {
         left: 50px;
         top: -30px;
+        border-radius: 10px;
     }
 
 
@@ -1790,7 +1841,25 @@
     .banner-dropDown {
         max-width: 192px;
     }
+
+    .content-creation-section::after {
+        background-image: url('/assets/img/content-creationBg2.png');
+    }
 }
 
+@media (max-width: 400px) {
+    .photo-banner {
+        height: 170px;
+    }
+    .convert-swiper-pagination {
+        bottom: -20px !important;
 
+    }
+    .convert-slide-img {
+        height: 170px;
+    }
+    .video-media {
+        margin-top: 50px;
+    }
+}
 /*=================================================MEDIA END===========================================*/
