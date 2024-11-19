@@ -92,13 +92,12 @@
                             <div class="swiper-wrapper">
 
                                 <div class="swiper-slide convert-slide">
-
                                     <div data-image="assets/img/convertimage2.webp"
                                          style="background-image: url('assets/img/convertimage2.webp')"
-                                         class="video-slide-img G-flex G-image video-decor video-block">
+                                         class="video-slide-img G-flex G-image video-decor video-block ">
 
-                                        <video  style="display: none" class="videoPlayer ">
-                                            <source src="./assets/video/Features.webm" type="video/webm">
+                                        <video  style="display: none" class="videoPlayer  ">
+                                            <source src="./assets/video/video.mp4" type="video/webm">
                                         </video>
                                         <div class="video-slide-dropdown">
                                             <p>Стеклянная абстрактная 3d фигура синих и белых оттенков..|</p>
@@ -109,15 +108,16 @@
                                         </div>
                                         <button class="convert-video-btn btn-blue">Сгенерировать</button>
                                     </div>
-
-
-
                                 </div>
 
 
                                 <div class="swiper-slide convert-slide convert-slide-mobile">
                                     <div style="background-image: url('assets/img/photoBanner2.webp')"
-                                         class="photo-banner banner photo-banner-one G-image">
+                                         class="photo-banner banner photo-banner-one G-image video-block autoplay">
+                                        <video autoplay muted  style="display: none" class="videoPlayer ">
+                                            <source src="./assets/video/bird.mp4" type="video/webm">
+                                        </video>
+
                                         <div class="banner-dropDown dropDown G-align-center">
                                             <div class="banner-dropDown-img dropDown-img ">
                                                 <img src="assets/img/banner-dropDown4.webp" alt="">
@@ -134,7 +134,10 @@
                                 </div>
                                 <div class="swiper-slide convert-slide convert-slide-mobile">
                                     <div style="background-image: url('assets/img/photoBanner3.webp')"
-                                         class="photo-banner banner photo-banner-two G-image">
+                                         class="photo-banner banner photo-banner-two G-image video-block autoplay">
+                                        <video autoplay muted  style="display: none" class="videoPlayer ">
+                                            <source src="./assets/video/painting.mp4" type="video/webm">
+                                        </video>
                                         <div class="photo-banner-text ">
                                             <p>Скопление молний, абстракция, 3D, синие и белые оттенки, 4К,
                                                 реализм..|</p>
@@ -143,39 +146,45 @@
                                         <div class="photo-banner-ranges G-flex-column">
                                             <div class="range">
                                                 <label class="G-flex">
-                                                    <input type="range" min="0" max="50" value="0" class="range-input"
+                                                    <input type="range" min="" max="50" value="35" class="range-input"
                                                            data-value=".value2"/>
                                                 </label>
-                                                <div class="value2 value">0</div>
+                                                <div class="value2 value"></div>
                                             </div>
                                             <div class="range">
                                                 <label class="G-flex">
-                                                    <input type="range" min="0" max="50" value="0" class="range-input"
+                                                    <input type="range" min="0" max="50" value="15" class="range-input"
                                                            data-value=".value3"/>
                                                 </label>
                                                 <div class="value3 value">0</div>
                                             </div>
                                             <div class="range">
                                                 <label class="G-flex">
-                                                    <input type="range" min="0" max="50" value="0" class="range-input"
+                                                    <input type="range" min="0" max="50" value="25" class="range-input"
                                                            data-value=".value4"/>
                                                 </label>
                                                 <div class="value4 value">0</div>
                                             </div>
+                                        </div>
+                                        <div class="video-play playButton">
+                                            <img src="assets/img/videoPlay.svg" alt="">
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="swiper-slide convert-slide convert-slide-mobile">
                                     <div style="background-image: url('assets/img/photoBanner1.webp')"
-                                         class="photo-banner banner photo-banner-tree G-image">
+                                         class="photo-banner banner photo-banner-tree G-image video-block autoplay">
+                                        <video autoplay muted  style="display: none" class="videoPlayer ">
+                                            <source src="./assets/video/water.mp4" type="video/webm">
+                                        </video>
                                         <div class="photo-banner-prompt G-flex">
                                             <img class="banner-prompt-img" src="assets/img/Pormpt.webp" alt="">
                                             <img class="prompt-img-mobile" src="assets/img/pormptMobile.webp" alt="">
 
                                         </div>
                                         <div class="banner-prompt-catalog G-align-center">
-                                            <span>Хип-Хоп</span>
+                                            <span class="active">Хип-Хоп</span>
                                             <span>Поп</span>
                                             <span>Электро</span>
                                             <span>Баллада</span>
@@ -183,6 +192,7 @@
 
                                     </div>
                                 </div>
+
 
                             </div>
                             <div class="convert-swiper-pagination swiper-pagination"></div>
@@ -201,7 +211,11 @@
                     <div class="photo-banners banners-sliders G-justify-between">
 
                         <div style="background-image: url('assets/img/photoBanner2.webp')"
-                             class="photo-banner banner photo-banner-one G-image">
+                             class="photo-banner banner photo-banner-one G-image video-block autoplay">
+                            <video autoplay muted  style="display: none" class="videoPlayer ">
+                                <source src="./assets/video/bird.mp4" type="video/webm">
+                            </video>
+
                             <div class="banner-dropDown dropDown G-align-center">
                                 <div class="banner-dropDown-img dropDown-img ">
                                     <img src="assets/img/banner-dropDown4.webp" alt="">
@@ -216,28 +230,32 @@
 
                         </div>
                         <div style="background-image: url('assets/img/photoBanner3.webp')"
-                             class="photo-banner banner photo-banner-two G-image">
+                             class="photo-banner banner photo-banner-two G-image video-block autoplay">
+                            <video autoplay muted  style="display: none" class="videoPlayer ">
+                                <source src="./assets/video/painting.mp4" type="video/webm">
+                            </video>
+
                             <div class="photo-banner-text ">
                                 <p>Скопление молний, абстракция, 3D, синие и белые оттенки, 4К, реализм..|</p>
                             </div>
                             <div class="photo-banner-ranges G-flex-column">
                                 <div class="range">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" class="range-input"
+                                        <input type="range" min="" max="50" value="35" class="range-input"
                                                data-value=".value2"/>
                                     </label>
-                                    <div class="value2 value">0</div>
+                                    <div class="value2 value"></div>
                                 </div>
                                 <div class="range">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" class="range-input"
+                                        <input type="range" min="0" max="50" value="15" class="range-input"
                                                data-value=".value3"/>
                                     </label>
                                     <div class="value3 value">0</div>
                                 </div>
                                 <div class="range">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" class="range-input"
+                                        <input type="range" min="0" max="50" value="25" class="range-input"
                                                data-value=".value4"/>
                                     </label>
                                     <div class="value4 value">0</div>
@@ -246,12 +264,15 @@
 
                         </div>
                         <div style="background-image: url('assets/img/photoBanner1.webp')"
-                             class="photo-banner banner photo-banner-tree G-image">
+                             class="photo-banner banner photo-banner-tree G-image video-block autoplay">
+                            <video autoplay muted  style="display: none" class="videoPlayer ">
+                                <source src="./assets/video/water.mp4" type="video/webm">
+                            </video>
                             <div class="photo-banner-prompt G-flex">
-                                <img src="assets/img/Pormpt.webp" alt="">
+                                <img src="assets/img/Pormpt.svg" alt="">
                             </div>
                             <div class="banner-prompt-catalog G-align-center">
-                                <span>Хип-Хоп</span>
+                                <span class="active">Хип-Хоп</span>
                                 <span>Поп</span>
                                 <span>Электро</span>
                                 <span>Баллада</span>
@@ -287,7 +308,7 @@
                                 </div>
                                 <div class="range ">
                                     <label class="G-flex">
-                                        <input type="range" min="0" max="50" value="0" id="range1" data-value=".value1"
+                                        <input type="range" min="0" max="50" value="35" id="range1" data-value=".value1"
                                                class="range-input"/>
                                     </label>
                                     <div class="value1 value">0</div>
@@ -311,6 +332,7 @@
             </div>
 
         </section>
+
 
         <section class="advantages-section">
             <div class="container">
@@ -378,7 +400,7 @@
             </div>
         </section>
 
-        <section class="assistant-help-section">
+        <section  id="forWhom" class="assistant-help-section">
             <div class="container">
                 <div class="assistant-help-body">
                     <h2 class="assistant-help-title block-title">Assistant AI поможет и в других задачах</h2>
@@ -405,7 +427,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="help-column">
-                                    <div class="help-column-img help-img-two G-flex">
+                                    <div class="help-column-img img-top   G-flex">
                                         <img src="assets/img/assistant-help2.webp" alt="">
                                     </div>
                                     <div class="help-column-texts  help-text-two">
@@ -437,7 +459,7 @@
                                         </p>
                                     </div>
                                     <div class="help-column-img help-img-tree G-flex">
-                                        <img src="assets/img/assistant-help3.webp" alt="">
+                                        <img src="assets/img/assistant-help14.png" alt="">
                                     </div>
 
                                 </div>
@@ -457,7 +479,7 @@
             </div>
         </section>
 
-        <section class="neural-network-section">
+        <section id="possibilities" class="neural-network-section">
             <div class="container">
                 <div class="neural-network-body G-flex-column G-center">
                     <h2 class="network-title block-title">Нейросеть, которая подойдёт каждому</h2>
@@ -494,11 +516,11 @@
                             <i class="icon icon-businessmen"></i>
                         </a>
 
-                        <a href="" class="network-descr network-info G-justify-between">
+                        <div class="network-descr network-info G-justify-between">
                             <p class="network-descr-text  ">Оживите контент для социальных сетей,
                                 привлеките внимание
                                 <br/>и удержите аудиторию</p>
-                        </a>
+                        </div>
 
                     </div>
                 </div>
@@ -506,7 +528,7 @@
         </section>
 
 
-        <section class="often-asks-section">
+        <section id="faq"  class="often-asks-section">
             <div class="container">
                 <div class="often-asks-body">
                     <h2 class="often-asks-title block-title">Вы часто спрашиваете нас</h2>
@@ -518,9 +540,8 @@
                                 <p>Как быстро создается видео?</p>
                                 <div class="asks-list-icon G-center"></div>
                             </div>
-                            <div class="asks-list-sub">Мы поддерживаем большинство популярных форматов: JPEG, PNG для
-                                фото,
-                                MP4 и MOV для видео
+                            <div class="asks-list-sub">
+                                Нейросеть Assistant AI генерирует видео за считанные минуты, в зависимости от сложности проекта и объема данных
                             </div>
                         </div>
 
@@ -529,9 +550,7 @@
                                 <p>Какие форматы файлов поддерживаются для загрузки фото и видео?</p>
                                 <div class="asks-list-icon G-center"></div>
                             </div>
-                            <div class="asks-list-sub">Мы поддерживаем большинство популярных форматов: JPEG, PNG для
-                                фото,
-                                MP4 и MOV для видео
+                            <div class="asks-list-sub">Мы поддерживаем большинство популярных форматов: JPEG, PNG для фото, MP4 и MOV для видео
                             </div>
                         </div>
 
@@ -540,9 +559,8 @@
                                 <p>Можно ли добавить музыку из моей библиотеки?</p>
                                 <div class="asks-list-icon G-center"></div>
                             </div>
-                            <div class="asks-list-sub">Мы поддерживаем большинство популярных форматов: JPEG, PNG для
-                                фото,
-                                MP4 и MOV для видео
+                            <div class="asks-list-sub">
+                                Да, вы можете загружать собственные аудиофайлы в форматах MP3, WAV и других популярных форматах
                             </div>
                         </div>
 
@@ -551,9 +569,9 @@
                                 <p>Какие эффекты можно добавить в видео?</p>
                                 <div class="asks-list-icon G-center"></div>
                             </div>
-                            <div class="asks-list-sub">Мы поддерживаем большинство популярных форматов: JPEG, PNG для
-                                фото,
-                                MP4 и MOV для видео
+                            <div class="asks-list-sub">
+                                Вы можете добавить переходы, анимации, текстовые вставки и многие другие визуальные эффекты,
+                                чтобы сделать видео более динамичным и интересным
                             </div>
                         </div>
 
@@ -562,9 +580,8 @@
                                 <p>Могу ли я изменить лица на видео (Face Swap)?</p>
                                 <div class="asks-list-icon G-center"></div>
                             </div>
-                            <div class="asks-list-sub">Мы поддерживаем большинство популярных форматов: JPEG, PNG для
-                                фото,
-                                MP4 и MOV для видео
+                            <div class="asks-list-sub">
+                                Да, наша функция Face Swap позволяет легко заменить лица на видео, создавая креативные и забавные ролики
                             </div>
                         </div>
 
@@ -573,9 +590,9 @@
                                 <p>Сохраняется ли качество фото и видео при обработке?</p>
                                 <div class="asks-list-icon G-center"></div>
                             </div>
-                            <div class="asks-list-sub">Мы поддерживаем большинство популярных форматов: JPEG, PNG для
-                                фото,
-                                MP4 и MOV для видео
+                            <div class="asks-list-sub">
+                                Да, мы сохраняем оригинальное качество загружаемых фото и видео, обеспечивая высокое разрешение в итоговом ролике.
+
                             </div>
                         </div>
 
@@ -584,21 +601,18 @@
                                 <p>Можно ли использовать нейросеть для создания длинных видеороликов?</p>
                                 <div class="asks-list-icon G-center"></div>
                             </div>
-                            <div class="asks-list-sub">Мы поддерживаем большинство популярных форматов: JPEG, PNG для
-                                фото,
-                                MP4 и MOV для видео
+                            <div class="asks-list-sub">
+                                Конечно! Assistant AI справляется как с короткими роликами, так и с более длительными видео, адаптируясь под ваши потребности
                             </div>
                         </div>
 
                         <div class="often-asks-item">
                             <div class="asks-item-header G-justify-between">
-                                <p>Можно ли использовать нейросеть для создания длинных видеороликов?</p>
+                                <p>Есть ли предустановленные шаблоны для видео?</p>
                                 <div class="asks-list-icon G-center"></div>
                             </div>
-                            <div class="asks-list-sub">Мы поддерживаем большинство популярных форматов: JPEG, PNG для
-                                фото,
-                                MP4 и MOV для видео
-                            </div>
+                            <div class="asks-list-sub">
+                                Да, мы предлагаем широкий выбор шаблонов, которые помогут вам быстро и легко создать стильные видео для разных целей                            </div>
                         </div>
 
                     </div>
@@ -607,7 +621,7 @@
         </section>
 
 
-        <section class="reviews-section">
+        <section id="reviews" class="reviews-section">
             <div class="container">
                 <div class="reviews-body">
                     <h2 class="reviews-title block-title">Отзывы</h2>
@@ -746,110 +760,6 @@
                                     </div>
                                 </div>
 
-                                <div class="swiper-slide">
-                                    <div class="reviews-item">
-                                        <div class="reviews-item-header G-flex-column">
-                                            <div class="reviews-author G-justify-between">
-                                                <h3 class="reviews-author-name">Анна</h3>
-                                                <div class="reviews-author-stars G-align-center">
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-
-                                                </div>
-                                            </div>
-                                            <div class="author-profession-box G-justify-between">
-                                                <p>PR-менеджер</p>
-                                                <span class="reviews-data">08 августа</span>
-                                            </div>
-                                            <div class="reviews-text">
-                                                Пользуюсь для создания видеооткрыток — очень удобно и быстро. Простой
-                                                интерфейс и отличные возможности.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="reviews-item">
-                                        <div class="reviews-item-header G-flex-column">
-                                            <div class="reviews-author G-justify-between">
-                                                <h3 class="reviews-author-name">Виктор</h3>
-                                                <div class="reviews-author-stars G-align-center">
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-
-                                                </div>
-                                            </div>
-                                            <div class="author-profession-box G-justify-between">
-                                                <p>маркетолог</p>
-                                                <span class="reviews-data">02 сентября</span>
-                                            </div>
-                                            <div class="reviews-text">
-                                                Мне понравилось, что можно легко настроить стиль видео под себя.
-                                                Отличный сервис для маркетологов!
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="swiper-slide">
-                                    <div class="reviews-item">
-                                        <div class="reviews-item-header G-flex-column">
-                                            <div class="reviews-author G-justify-between">
-                                                <h3 class="reviews-author-name">Ольга</h3>
-                                                <div class="reviews-author-stars G-align-center">
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-
-                                                </div>
-                                            </div>
-                                            <div class="author-profession-box G-justify-between">
-                                                <p>графический дизайнер</p>
-                                                <span class="reviews-data">25 августа</span>
-                                            </div>
-                                            <div class="reviews-text">
-                                                Создала видео для своего блога за считанные минуты. Очень крутая функция
-                                                добавления музыки и анимации!
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="reviews-item">
-                                        <div class="reviews-item-header G-flex-column">
-                                            <div class="reviews-author G-justify-between">
-                                                <h3 class="reviews-author-name">Роман</h3>
-                                                <div class="reviews-author-stars G-align-center">
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-                                                    <i class="icon icon-star"></i>
-
-                                                </div>
-                                            </div>
-                                            <div class="author-profession-box G-justify-between">
-                                                <p>PR-менеджер</p>
-                                                <span class="reviews-data">08 августа</span>
-                                            </div>
-                                            <div class="reviews-text">
-                                                Идеальный инструмент для создания видео без навыков монтажа. Нейросеть
-                                                делает всю работу за меня!
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
                             <div class="reviews-swiper-pagination swiper-pagination"></div>

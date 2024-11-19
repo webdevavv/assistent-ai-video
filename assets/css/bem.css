@@ -167,9 +167,7 @@
     cursor: pointer;
 
 }
-.network-info{
-    cursor: pointer;
-}
+
 .network-info:hover .network-text{
     opacity: 1;
 
@@ -199,6 +197,8 @@
     width: 10px;
     background-color: #0057FF;
     border-radius: 50%;
+    box-shadow: 0px 2px 10px 0px #0057FF66;
+
     border: none;
     transition: .2s ease-in-out;
 }
@@ -207,33 +207,35 @@
     height: 10px;
     width: 10px;
     background-color: #0057FF;
+    box-shadow: 0px 2px 10px 0px #0057FF66;
+
     border-radius: 50%;
     border: none;
     transition: .2s ease-in-out;
 }
 
 .range-input::-webkit-slider-thumb:hover {
-    box-shadow: 0 0 0 10px rgba(255, 85, 0, .1)
+    box-shadow: 0px 2px 10px 0px #0057FF66;
 }
 
 .range-input:active::-webkit-slider-thumb {
-    box-shadow: 0 0 0 13px #0057FF66
+    box-shadow: 0px 2px 10px 0px #0057FF66;
 }
 
 .range-input:focus::-webkit-slider-thumb {
-    box-shadow: 0 0 0 13px #0057FF66
+    box-shadow: 0px 2px 10px 0px #0057FF66;
 }
 
 .range-input::-moz-range-thumb:hover {
-    box-shadow: 0 0 0 10px #0057FF66
+    box-shadow: 0px 2px 10px 0px #0057FF66;
 }
 
 .range-input:active::-moz-range-thumb {
-    box-shadow: 0 0 0 13px #0057FF66
+    box-shadow: 0px 2px 10px 0px #0057FF66;
 }
 
 .range-input:focus::-moz-range-thumb {
-    box-shadow: 0 0 0 13px #0057FF66;
+    box-shadow: 0px 2px 10px 0px #0057FF66;
 }
 
 .value {
