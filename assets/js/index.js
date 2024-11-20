@@ -83,6 +83,16 @@ document.querySelectorAll('.often-asks-item').forEach(item => {
 
 
 
+document.querySelectorAll('.range-input').forEach((sliderEl) => {
+    const valueDisplay = document.querySelector(sliderEl.getAttribute('data-value'));
+
+    // Инициализация текущих значений на старте
+    updateSlider(sliderEl, valueDisplay);
+
+    // Добавляем слушатель на изменение
+    sliderEl.addEventListener('input', () => updateSlider(sliderEl, valueDisplay));
+});
+
 function updateSlider(slider, valueDisplay) {
     const tempSliderValue = slider.value;
     valueDisplay.textContent = tempSliderValue;
@@ -92,15 +102,6 @@ function updateSlider(slider, valueDisplay) {
     slider.style.background = `linear-gradient(to right, #0057FF ${progress}%, #ccc ${progress}%)`;
 }
 
-document.querySelectorAll('.range-input').forEach(sliderEl => {
-    const valueDisplay = document.querySelector(sliderEl.getAttribute('data-value'));
-
-    sliderEl.addEventListener('input', () => updateSlider(sliderEl, valueDisplay));
-
-    updateSlider(sliderEl, valueDisplay);
-})
-
-
 
 
 document.querySelectorAll('.video-block').forEach(block => {
@@ -109,30 +110,39 @@ document.querySelectorAll('.video-block').forEach(block => {
     const defaultImage = block.getAttribute('data-image');
     let isPlaying = false;
 
-    function toggleVideo() {
-        if (!isPlaying) {
-            block.style.backgroundImage = "none";
-            videoPlayer.style.display = "block";
-            videoPlayer.play();
-            playButton.style.display = "none";
-            isPlaying = true;
-        } else {
-            block.style.backgroundImage = `url('${defaultImage}')`;
-            videoPlayer.style.display = "none";
-            videoPlayer.pause();
-            videoPlayer.currentTime = 0;
-            playButton.style.display = "block";
-            isPlaying = false;
-        }
+    // Функция воспроизведения
+    function playVideo() {
+        block.style.backgroundImage = "none";
+        videoPlayer.style.display = "block";
+        videoPlayer.play();
+        playButton.style.display = "none";
+        isPlaying = true;
     }
 
-    playButton.addEventListener("click", toggleVideo);
-
-    videoPlayer.addEventListener("ended", function() {
+    // Функция остановки
+    function stopVideo() {
         block.style.backgroundImage = `url('${defaultImage}')`;
         videoPlayer.style.display = "none";
+        videoPlayer.pause();
         videoPlayer.currentTime = 0;
         playButton.style.display = "block";
         isPlaying = false;
+    }
+
+    // Если блок имеет класс autoplay, запускаем видео
+    if (block.classList.contains('autoplay')) {
+        videoPlayer.addEventListener('canplay', () => {
+            playVideo();
+        });
+    }
+
+
+    // Событие: клик по кнопке воспроизведения
+    playButton?.addEventListener("click", () => {
+        isPlaying ? stopVideo() : playVideo();
     });
+
+    // Событие: когда видео завершилось
+    videoPlayer.addEventListener("ended", stopVideo);
 });
+

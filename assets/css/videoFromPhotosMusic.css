@@ -56,7 +56,7 @@
 
 }
 
-.video-media {
+.video-photo-media {
     margin-top: 150px;
 }
 
@@ -152,7 +152,7 @@
     }
 
     .together-all-img img {
-        border-radius: 15px;
+        border-radius: 10px;
     }
 
     .together-all-dropdown {
@@ -162,14 +162,16 @@
         padding: 10px;
     }
 
-    .video-media {
-        margin-top: 50px;
+    .video-photo-media {
+        margin-top: 130px;
     }
 
     .together-picture {
         width: 620px;
     }
-
+.from-photos-pagination{
+    bottom: -30px !important;
+}
     .together-play-tools {
         left: -20px;
     }
@@ -185,6 +187,7 @@
         right: -40px;
         top: -39px;
         max-width: 276px;
+        border-radius: 10px;
     }
 
     .together-video-sub {
@@ -207,9 +210,11 @@
 
     .together-info {
         padding: 10px 15px;
-        left: -40px;
+        left: -50px;
         right: unset;
         bottom: -30px;
+        border-radius: 10px;
+        max-width: 320px;
     }
 
     .together-info p {
@@ -241,6 +246,7 @@
 
     .together-picture {
         width: 400px;
+        border-radius: 15px;
     }
 }
 
@@ -269,6 +275,17 @@
     .together-play-mobile {
         display: block;
     }
+
+    .together-all-img {
+        height: 270px;
+        transform: scaleX(-1);
+    }
+    .video-photo-media {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 400px) {
 
     .together-all-img {
         height: 170px;

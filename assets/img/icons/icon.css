@@ -37,8 +37,8 @@
     -webkit-mask-image: url(./translators.svg);
 }
 .icon-artists{
-    mask-image: url(./artists.svg);
-    -webkit-mask-image: url(./artists.svg);
+    mask-image: url(artists.svg);
+    -webkit-mask-image: url(artists.svg);
 }
 .icon-businessmen{
     mask-image: url(./businessmen.svg);
