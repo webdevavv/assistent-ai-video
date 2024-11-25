@@ -85,7 +85,9 @@
 .ideas-video-media {
     margin-top: 150px;
 }
-
+.ideas-video-player{
+     transform: scaleX(-1);
+}
 .ideas-main-picture {
     width: 788px;
     height: 439px;

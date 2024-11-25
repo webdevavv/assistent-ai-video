@@ -10,15 +10,18 @@
     align-items: center;
     transition: .3s;
 }
-.header.moved{
+
+.header.moved {
     padding: 5px 0;
 
 }
-.header.moved .header-body{
+
+.header.moved .header-body {
     padding: 7px 24px;
 
 
 }
+
 .header.active .header-body {
     backdrop-filter: unset;
 
@@ -290,8 +293,17 @@
         padding: 13px 0;
     }
 
+    .header-body {
+        padding: 7px 12px;
 
-    .header-logo{
+    }
+
+    .header.moved .header-body {
+        padding: 7px 12px;
+
+    }
+
+    .header-logo {
         max-width: 124px;
     }
 
