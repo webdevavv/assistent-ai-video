@@ -127,6 +127,7 @@ document.querySelectorAll('.video-block').forEach(block => {
             videoPlayer.pause();
             videoPlayer.currentTime = 0;
         }
+
         if (playButton) {
             playButton.style.display = "block";
 
@@ -165,15 +166,13 @@ document.querySelectorAll('.video-block').forEach(block => {
 
     }
 
-    function stopVideo() {
-        if(videoPlayer){
+    function pauseVideo() {
+        if (videoPlayer) {
             videoPlayer.pause();
-            videoPlayer.currentTime = 0;
             videoPlayer.style.display = "none";
         }
-
     }
 
     block.addEventListener('mouseenter', playVideo);
-    block.addEventListener('mouseleave', stopVideo);
+    block.addEventListener('mouseleave', pauseVideo);
 });
