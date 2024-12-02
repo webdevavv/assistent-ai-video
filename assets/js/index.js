@@ -108,9 +108,12 @@ document.querySelectorAll('.video-block').forEach(block => {
 
     function playVideo() {
         block.style.backgroundImage = "none";
-        videoPlayer.style.display = "block";
+        if(videoPlayer){
+            videoPlayer.style.display = "block";
+
+        }
         videoPlayer.play();
-        if(playButton){
+        if (playButton) {
             playButton.style.display = "none";
 
         }
@@ -119,10 +122,12 @@ document.querySelectorAll('.video-block').forEach(block => {
 
     function stopVideo() {
         block.style.backgroundImage = `url('${defaultImage}')`;
-        videoPlayer.style.display = "none";
-        videoPlayer.pause();
-        videoPlayer.currentTime = 0;
-        if(playButton){
+        if(videoPlayer){
+            videoPlayer.style.display = "none";
+            videoPlayer.pause();
+            videoPlayer.currentTime = 0;
+        }
+        if (playButton) {
             playButton.style.display = "block";
 
         }
@@ -141,11 +146,11 @@ document.querySelectorAll('.video-block').forEach(block => {
         });
     }
 
+    if (videoPlayer) {
+        videoPlayer.addEventListener("ended", stopVideo);
 
-    videoPlayer.addEventListener("ended", stopVideo);
+    }
 });
-
-
 
 
 document.querySelectorAll('.video-block').forEach(block => {
@@ -153,14 +158,20 @@ document.querySelectorAll('.video-block').forEach(block => {
 
 
     function playVideo() {
-        videoPlayer.style.display = "block";
-        videoPlayer.play();
+        if(videoPlayer){
+            videoPlayer.style.display = "block";
+            videoPlayer.play();
+        }
+
     }
 
     function stopVideo() {
-        videoPlayer.pause();
-        videoPlayer.currentTime = 0;
-        videoPlayer.style.display = "none";
+        if(videoPlayer){
+            videoPlayer.pause();
+            videoPlayer.currentTime = 0;
+            videoPlayer.style.display = "none";
+        }
+
     }
 
     block.addEventListener('mouseenter', playVideo);
