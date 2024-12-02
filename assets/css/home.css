@@ -551,7 +551,7 @@
 .assistant-help-section::before {
     content: '';
     position: absolute;
-    background-image: url('/assets/img/assistentFon.webp');
+    background-image: url('assets/img/assistentFon.webp');
     left: 0;
     bottom: 0;
     width: 100%;
