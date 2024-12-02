@@ -163,7 +163,7 @@
 
     .menu-list li a::after {
         content: '';
-        background-image: url('/assets/img/icons/arrow.svg');
+        background-image: url('../img/icons/arrow.svg');
         width: 15px;
         height: 15px;
         display: block;

@@ -7,7 +7,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: url('/assets/img/convertBg.webp');
+    background-image: url('../img/convertBg.webp');
     width: 100%;
     height: 900px;
     left: 0;
@@ -159,7 +159,7 @@
 }
 
 .photo-video-section::after {
-    background-image: url('/assets/img/photoBg.webp');
+    background-image: url('../img/photoBg.webp');
     content: '';
 
     position: absolute;
@@ -551,7 +551,7 @@
 .assistant-help-section::before {
     content: '';
     position: absolute;
-    background-image: url('assets/img/assistentFon.webp');
+    background-image: url('../img/assistentFon.webp');
     left: 0;
     bottom: 0;
     width: 100%;
@@ -702,7 +702,7 @@
     height: 688px;
     top: 0;
     z-index: -1;
-    background-image: url('/assets/img/networkFon.jpg');
+    background-image: url('../img/networkFon.jpg');
 }
 
 .neural-bg img {
@@ -1031,7 +1031,7 @@
     content: '';
     width: 100%;
     position: absolute;
-    background-image: url('/assets/img/content-creationBg.webp');
+    background-image: url('../img/content-creationBg.webp');
     left: 0;
     min-height: 260px;
     height: 100%;
@@ -1843,7 +1843,7 @@
     }
 
     .content-creation-section::after {
-        background-image: url('/assets/img/content-creationBg2.png');
+        background-image: url('../img/content-creationBg2.png');
     }
 }
 
