@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const headerTop = document.querySelector('.header')
 
 
@@ -51,7 +51,6 @@ window.addEventListener('scroll', function() {
 
     }
 });
-
 
 
 function toggleActiveState(item) {
@@ -81,8 +80,6 @@ document.querySelectorAll('.often-asks-item').forEach(item => {
 });
 
 
-
-
 document.querySelectorAll('.range-input').forEach((sliderEl) => {
     const valueDisplay = document.querySelector(sliderEl.getAttribute('data-value'));
 
@@ -103,46 +100,69 @@ function updateSlider(slider, valueDisplay) {
 }
 
 
-
 document.querySelectorAll('.video-block').forEach(block => {
     const playButton = block.querySelector('.playButton');
     const videoPlayer = block.querySelector('.videoPlayer');
     const defaultImage = block.getAttribute('data-image');
     let isPlaying = false;
 
-    // Функция воспроизведения
     function playVideo() {
         block.style.backgroundImage = "none";
         videoPlayer.style.display = "block";
         videoPlayer.play();
-        playButton.style.display = "none";
+        if(playButton){
+            playButton.style.display = "none";
+
+        }
         isPlaying = true;
     }
 
-    // Функция остановки
     function stopVideo() {
         block.style.backgroundImage = `url('${defaultImage}')`;
         videoPlayer.style.display = "none";
         videoPlayer.pause();
         videoPlayer.currentTime = 0;
-        playButton.style.display = "block";
+        if(playButton){
+            playButton.style.display = "block";
+
+        }
         isPlaying = false;
     }
 
-    // Если блок имеет класс autoplay, запускаем видео
     if (block.classList.contains('autoplay')) {
         videoPlayer.addEventListener('canplay', () => {
             playVideo();
         });
     }
 
+    if (playButton) {
+        playButton?.addEventListener("click", () => {
+            isPlaying ? stopVideo() : playVideo();
+        });
+    }
 
-    // Событие: клик по кнопке воспроизведения
-    playButton?.addEventListener("click", () => {
-        isPlaying ? stopVideo() : playVideo();
-    });
 
-    // Событие: когда видео завершилось
     videoPlayer.addEventListener("ended", stopVideo);
 });
 
+
+
+
+document.querySelectorAll('.video-block').forEach(block => {
+    const videoPlayer = block.querySelector('.hover-play');
+
+
+    function playVideo() {
+        videoPlayer.style.display = "block";
+        videoPlayer.play();
+    }
+
+    function stopVideo() {
+        videoPlayer.pause();
+        videoPlayer.currentTime = 0;
+        videoPlayer.style.display = "none";
+    }
+
+    block.addEventListener('mouseenter', playVideo);
+    block.addEventListener('mouseleave', stopVideo);
+});

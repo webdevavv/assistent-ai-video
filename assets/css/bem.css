@@ -189,7 +189,10 @@
     box-shadow: 0px 2px 10px 0px #0057FF66;
 
 }
-
+.hover-play{
+    cursor: pointer;
+    display: none;
+}
 
 .range-input {
     -webkit-appearance: none;
